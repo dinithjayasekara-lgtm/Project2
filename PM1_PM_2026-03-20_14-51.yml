@@ -1,0 +1,105 @@
+version: 2
+sources: []
+models:
+  - name: PE3
+    description: ''
+    constraints:
+      - type: foreign_key
+        columns:
+          - id
+        to: ref('PE2')
+        to_columns:
+          - id
+      - type: foreign_key
+        columns:
+          - id
+        to: ref('PE4')
+        to_columns:
+          - id
+      - type: foreign_key
+        columns:
+          - id
+        to: ref('PE3')
+        to_columns:
+          - id
+      - type: primary_key
+        columns:
+          - id
+    columns:
+      - name: id
+        constraints: []
+        description: ''
+        data_type: INT
+        tests: []
+  - name: PE4
+    description: ''
+    constraints:
+      - type: foreign_key
+        columns:
+          - id
+        to: ref('PE3')
+        to_columns:
+          - id
+      - type: foreign_key
+        columns:
+          - id
+        to: ref('PE1')
+        to_columns:
+          - id
+      - type: foreign_key
+        columns:
+          - id
+        to: ref('PE2')
+        to_columns:
+          - id
+      - type: primary_key
+        columns:
+          - id
+    columns:
+      - name: id
+        constraints: []
+        description: ''
+        data_type: INT
+        tests: []
+  - name: PE1
+    description: ''
+    constraints:
+      - type: foreign_key
+        columns:
+          - id
+        to: ref('PE2')
+        to_columns:
+          - id
+      - type: foreign_key
+        columns:
+          - id
+        to: ref('PE3')
+        to_columns:
+          - id
+      - type: primary_key
+        columns:
+          - id
+    columns:
+      - name: id
+        constraints: []
+        description: ''
+        data_type: INT
+        tests: []
+  - name: PE2
+    description: ''
+    constraints:
+      - type: foreign_key
+        columns:
+          - id
+        to: ref('PE1')
+        to_columns:
+          - id
+      - type: primary_key
+        columns:
+          - id
+    columns:
+      - name: id
+        constraints: []
+        description: ''
+        data_type: INT
+        tests: []

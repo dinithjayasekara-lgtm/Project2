@@ -1,0 +1,1611 @@
+{
+  "modelId": 5061,
+  "name": "Test3",
+  "description": "",
+  "level": "physical",
+  "folderId": 127,
+  "dbEngine": "databricks",
+  "metadata": {
+    "TEXT": "jgjg",
+    "BOOLEAN": false,
+    "CHIPSWITHNOVALUES": "[]",
+    "CHIPSWITHVALUE": "[\"CH1\"]",
+    "USERS": "[]",
+    "Technical": "",
+    "test": ""
+  },
+  "progressStatus": "work-in-progress",
+  "createdAt": "2026-06-12T11:18:26.225Z",
+  "updatedAt": "2026-09-15T09:59:19.492Z",
+  "entities": [
+    {
+      "id": "b2ea2bc7-4d2b-4b7b-9b36-70a6cc508bb4",
+      "name": "CARRIER",
+      "level": "physical",
+      "type": "Not set",
+      "progressStatus": "work-in-progress",
+      "createdAt": "2026-09-14T13:37:54.947Z",
+      "updatedAt": "2026-09-14T13:37:54.947Z",
+      "folderId": null,
+      "metadata": {
+        "Description": "",
+        "Examples": "",
+        "Synonyms": "[]",
+        "Source systems": "[]",
+        "Administrated by": "",
+        "External Term ID": "",
+        "External Glossary ID": "",
+        "ChipsWithDefValue": "[]",
+        "ChipsWithCustonVal": "[]",
+        "Boolean": false,
+        "Users": "[]",
+        "links": []
+      },
+      "linkedEntities": [],
+      "attributes": [
+        {
+          "id": "7d8b4b8a-b041-11f1-9b39-e22724c8497b",
+          "name": "CARRIER_ID",
+          "order": 1,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": true,
+            "FK": false,
+            "Data type": "DECIMAL",
+            "Not null": true,
+            "Unique": true,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "077ab5ea-4168-4d89-b918-665980e6a8a4",
+      "name": "CUSTOMER",
+      "level": "physical",
+      "type": "Not set",
+      "progressStatus": "work-in-progress",
+      "createdAt": "2026-09-14T13:37:54.947Z",
+      "updatedAt": "2026-09-14T13:37:54.947Z",
+      "folderId": null,
+      "metadata": {
+        "Description": "",
+        "Examples": "",
+        "Synonyms": "[]",
+        "Source systems": "[]",
+        "Administrated by": "",
+        "External Term ID": "",
+        "External Glossary ID": "",
+        "ChipsWithDefValue": "[]",
+        "ChipsWithCustonVal": "[]",
+        "Boolean": false,
+        "Users": "[]",
+        "links": []
+      },
+      "linkedEntities": [],
+      "attributes": [
+        {
+          "id": "7d8b017a-b041-11f1-9b39-e22724c8497b",
+          "name": "CUSTOMER_ID",
+          "order": 1,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": true,
+            "FK": false,
+            "Data type": "DECIMAL",
+            "Not null": true,
+            "Unique": true,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "87adb3bd-24d8-4684-8c91-16254fb67df9",
+      "name": "DELIVERY",
+      "level": "physical",
+      "type": "Not set",
+      "progressStatus": "work-in-progress",
+      "createdAt": "2026-09-14T13:37:54.947Z",
+      "updatedAt": "2026-09-14T13:37:54.947Z",
+      "folderId": null,
+      "metadata": {
+        "Description": "",
+        "Examples": "",
+        "Synonyms": "[]",
+        "Source systems": "[]",
+        "Administrated by": "",
+        "External Term ID": "",
+        "External Glossary ID": "",
+        "ChipsWithDefValue": "[]",
+        "ChipsWithCustonVal": "[]",
+        "Boolean": false,
+        "Users": "[]",
+        "links": []
+      },
+      "linkedEntities": [],
+      "attributes": [
+        {
+          "id": "7d8b3c9e-b041-11f1-9b39-e22724c8497b",
+          "name": "DELIVERY_ID",
+          "order": 1,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": true,
+            "FK": false,
+            "Data type": "DECIMAL",
+            "Not null": true,
+            "Unique": true,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        },
+        {
+          "id": "7d8b3e6a-b041-11f1-9b39-e22724c8497b",
+          "name": "CUSTOMER_ID",
+          "order": 2,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": false,
+            "FK": true,
+            "Data type": "DECIMAL",
+            "Not null": false,
+            "Unique": false,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        },
+        {
+          "id": "7d8b4040-b041-11f1-9b39-e22724c8497b",
+          "name": "TRANSPORT_VEHICLE_ID",
+          "order": 3,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": false,
+            "FK": true,
+            "Data type": "DECIMAL",
+            "Not null": false,
+            "Unique": false,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0b0d1c59-de01-4129-ba41-0c83b2648877",
+      "name": "EMPLOYEE",
+      "level": "physical",
+      "type": "Not set",
+      "progressStatus": "work-in-progress",
+      "createdAt": "2026-09-14T13:37:54.947Z",
+      "updatedAt": "2026-09-14T13:37:54.947Z",
+      "folderId": null,
+      "metadata": {
+        "Description": "",
+        "Examples": "",
+        "Synonyms": "[]",
+        "Source systems": "[]",
+        "Administrated by": "",
+        "External Term ID": "",
+        "External Glossary ID": "",
+        "ChipsWithDefValue": "[]",
+        "ChipsWithCustonVal": "[]",
+        "Boolean": false,
+        "Users": "[]",
+        "links": []
+      },
+      "linkedEntities": [],
+      "attributes": [
+        {
+          "id": "7d8b26fa-b041-11f1-9b39-e22724c8497b",
+          "name": "EMPLOYEE_ID",
+          "order": 1,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": true,
+            "FK": false,
+            "Data type": "DECIMAL",
+            "Not null": true,
+            "Unique": true,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        },
+        {
+          "id": "7d8b295c-b041-11f1-9b39-e22724c8497b",
+          "name": "WAREHOUSE_ID",
+          "order": 2,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": false,
+            "FK": true,
+            "Data type": "DECIMAL",
+            "Not null": false,
+            "Unique": false,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e81a7977-0ea8-4755-bbc7-57ea7b99db75",
+      "name": "INVENTORY",
+      "level": "physical",
+      "type": "Not set",
+      "progressStatus": "work-in-progress",
+      "createdAt": "2026-09-14T13:37:54.947Z",
+      "updatedAt": "2026-09-14T13:37:54.947Z",
+      "folderId": null,
+      "metadata": {
+        "Description": "",
+        "Examples": "",
+        "Synonyms": "[]",
+        "Source systems": "[]",
+        "Administrated by": "",
+        "External Term ID": "",
+        "External Glossary ID": "",
+        "ChipsWithDefValue": "[]",
+        "ChipsWithCustonVal": "[]",
+        "Boolean": false,
+        "Users": "[]",
+        "links": []
+      },
+      "linkedEntities": [],
+      "attributes": [
+        {
+          "id": "7d8b5332-b041-11f1-9b39-e22724c8497b",
+          "name": "INVENTORY_ID",
+          "order": 1,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": true,
+            "FK": false,
+            "Data type": "DECIMAL",
+            "Not null": true,
+            "Unique": true,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        },
+        {
+          "id": "7d8b54ea-b041-11f1-9b39-e22724c8497b",
+          "name": "WAREHOUSE_ID",
+          "order": 2,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": false,
+            "FK": true,
+            "Data type": "DECIMAL",
+            "Not null": false,
+            "Unique": false,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        },
+        {
+          "id": "7d8b56ca-b041-11f1-9b39-e22724c8497b",
+          "name": "PRODUCT_ID",
+          "order": 3,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": false,
+            "FK": true,
+            "Data type": "DECIMAL",
+            "Not null": false,
+            "Unique": false,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e5b52c62-6e78-4142-b762-8aaec20f3e26",
+      "name": "INVOICE",
+      "level": "physical",
+      "type": "Not set",
+      "progressStatus": "work-in-progress",
+      "createdAt": "2026-09-14T13:37:54.947Z",
+      "updatedAt": "2026-09-14T13:37:54.947Z",
+      "folderId": null,
+      "metadata": {
+        "Description": "",
+        "Examples": "",
+        "Synonyms": "[]",
+        "Source systems": "[]",
+        "Administrated by": "",
+        "External Term ID": "",
+        "External Glossary ID": "",
+        "ChipsWithDefValue": "[]",
+        "ChipsWithCustonVal": "[]",
+        "Boolean": false,
+        "Users": "[]",
+        "links": []
+      },
+      "linkedEntities": [],
+      "attributes": [
+        {
+          "id": "7d8b4f7c-b041-11f1-9b39-e22724c8497b",
+          "name": "INVOICE_ID",
+          "order": 1,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": true,
+            "FK": false,
+            "Data type": "DECIMAL",
+            "Not null": true,
+            "Unique": true,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        },
+        {
+          "id": "7d8b5148-b041-11f1-9b39-e22724c8497b",
+          "name": "ORDER_ID",
+          "order": 2,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": false,
+            "FK": true,
+            "Data type": "DECIMAL",
+            "Not null": false,
+            "Unique": false,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "47b932ff-6ef8-46a8-8489-280074c8803f",
+      "name": "ORDER_PRODUCT",
+      "level": "physical",
+      "type": "Not set",
+      "progressStatus": "work-in-progress",
+      "createdAt": "2026-09-14T13:37:54.947Z",
+      "updatedAt": "2026-09-14T13:37:54.947Z",
+      "folderId": null,
+      "metadata": {
+        "Description": "",
+        "Examples": "",
+        "Synonyms": "[]",
+        "Source systems": "[]",
+        "Administrated by": "",
+        "External Term ID": "",
+        "External Glossary ID": "",
+        "ChipsWithDefValue": "[]",
+        "ChipsWithCustonVal": "[]",
+        "Boolean": false,
+        "Users": "[]",
+        "links": []
+      },
+      "linkedEntities": [],
+      "attributes": [
+        {
+          "id": "7d8b324e-b041-11f1-9b39-e22724c8497b",
+          "name": "ORDER_PRODUCT_ID",
+          "order": 1,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": true,
+            "FK": false,
+            "Data type": "DECIMAL",
+            "Not null": true,
+            "Unique": true,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        },
+        {
+          "id": "7d8b3442-b041-11f1-9b39-e22724c8497b",
+          "name": "ORDER_ID",
+          "order": 2,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": false,
+            "FK": true,
+            "Data type": "DECIMAL",
+            "Not null": false,
+            "Unique": false,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        },
+        {
+          "id": "7d8b36f4-b041-11f1-9b39-e22724c8497b",
+          "name": "PRODUCT_ID",
+          "order": 3,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": false,
+            "FK": true,
+            "Data type": "DECIMAL",
+            "Not null": false,
+            "Unique": false,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "45fe629f-1c18-4209-bf7f-f209bf822100",
+      "name": "Order",
+      "level": "physical",
+      "type": "Not set",
+      "progressStatus": "work-in-progress",
+      "createdAt": "2026-09-14T13:37:54.947Z",
+      "updatedAt": "2026-09-14T13:37:54.947Z",
+      "folderId": null,
+      "metadata": {
+        "Description": "",
+        "Examples": "",
+        "Synonyms": "[]",
+        "Source systems": "[]",
+        "Administrated by": "",
+        "External Term ID": "",
+        "External Glossary ID": "",
+        "ChipsWithDefValue": "[]",
+        "ChipsWithCustonVal": "[]",
+        "Boolean": false,
+        "Users": "[]",
+        "links": []
+      },
+      "linkedEntities": [],
+      "attributes": [
+        {
+          "id": "7d8b2df8-b041-11f1-9b39-e22724c8497b",
+          "name": "ORDER_ID",
+          "order": 1,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": true,
+            "FK": false,
+            "Data type": "DECIMAL",
+            "Not null": true,
+            "Unique": true,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        },
+        {
+          "id": "7d8b2ff6-b041-11f1-9b39-e22724c8497b",
+          "name": "CUSTOMER_ID",
+          "order": 2,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": false,
+            "FK": true,
+            "Data type": "DECIMAL",
+            "Not null": false,
+            "Unique": false,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "532a2dcf-b20e-4de7-ac84-a108a9c047a7",
+      "name": "PRODUCT",
+      "level": "physical",
+      "type": "Not set",
+      "progressStatus": "work-in-progress",
+      "createdAt": "2026-09-14T13:37:54.947Z",
+      "updatedAt": "2026-09-14T13:37:54.947Z",
+      "folderId": null,
+      "metadata": {
+        "Description": "",
+        "Examples": "",
+        "Synonyms": "[]",
+        "Source systems": "[]",
+        "Administrated by": "",
+        "External Term ID": "",
+        "External Glossary ID": "",
+        "ChipsWithDefValue": "[]",
+        "ChipsWithCustonVal": "[]",
+        "Boolean": false,
+        "Users": "[]",
+        "links": []
+      },
+      "linkedEntities": [],
+      "attributes": [
+        {
+          "id": "7d8b38f2-b041-11f1-9b39-e22724c8497b",
+          "name": "PRODUCT_ID",
+          "order": 1,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": true,
+            "FK": false,
+            "Data type": "DECIMAL",
+            "Not null": true,
+            "Unique": true,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        },
+        {
+          "id": "7d8b3ab4-b041-11f1-9b39-e22724c8497b",
+          "name": "SUPPLIER_ID",
+          "order": 2,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": false,
+            "FK": true,
+            "Data type": "DECIMAL",
+            "Not null": false,
+            "Unique": false,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fa658c43-eca9-4fb3-9f49-70e73d76c7d5",
+      "name": "Return",
+      "level": "physical",
+      "type": "Not set",
+      "progressStatus": "work-in-progress",
+      "createdAt": "2026-09-14T13:37:54.947Z",
+      "updatedAt": "2026-09-14T13:37:54.947Z",
+      "folderId": null,
+      "metadata": {
+        "Description": "",
+        "Examples": "",
+        "Synonyms": "[]",
+        "Source systems": "[]",
+        "Administrated by": "",
+        "External Term ID": "",
+        "External Glossary ID": "",
+        "ChipsWithDefValue": "[]",
+        "ChipsWithCustonVal": "[]",
+        "Boolean": false,
+        "Users": "[]",
+        "links": []
+      },
+      "linkedEntities": [],
+      "attributes": [
+        {
+          "id": "7d8b5ad0-b041-11f1-9b39-e22724c8497b",
+          "name": "RETURN_ID",
+          "order": 1,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": true,
+            "FK": false,
+            "Data type": "DECIMAL",
+            "Not null": true,
+            "Unique": true,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        },
+        {
+          "id": "7d8b5db4-b041-11f1-9b39-e22724c8497b",
+          "name": "ORDER_ID",
+          "order": 2,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": false,
+            "FK": true,
+            "Data type": "DECIMAL",
+            "Not null": false,
+            "Unique": false,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a048d65a-871d-4b0e-b8e7-4dee02fde4ad",
+      "name": "SHIPMENT",
+      "level": "physical",
+      "type": "Not set",
+      "progressStatus": "work-in-progress",
+      "createdAt": "2026-09-14T13:37:54.947Z",
+      "updatedAt": "2026-09-14T13:37:54.947Z",
+      "folderId": null,
+      "metadata": {
+        "Description": "",
+        "Examples": "",
+        "Synonyms": "[]",
+        "Source systems": "[]",
+        "Administrated by": "",
+        "External Term ID": "",
+        "External Glossary ID": "",
+        "ChipsWithDefValue": "[]",
+        "ChipsWithCustonVal": "[]",
+        "Boolean": false,
+        "Users": "[]",
+        "links": []
+      },
+      "linkedEntities": [],
+      "attributes": [
+        {
+          "id": "7d8b4252-b041-11f1-9b39-e22724c8497b",
+          "name": "SHIPMENT_ID",
+          "order": 1,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": true,
+            "FK": false,
+            "Data type": "DECIMAL",
+            "Not null": true,
+            "Unique": true,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        },
+        {
+          "id": "7d8b4428-b041-11f1-9b39-e22724c8497b",
+          "name": "CARRIER_ID",
+          "order": 2,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": false,
+            "FK": true,
+            "Data type": "DECIMAL",
+            "Not null": false,
+            "Unique": false,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        },
+        {
+          "id": "7d8b4608-b041-11f1-9b39-e22724c8497b",
+          "name": "ORDER_ID",
+          "order": 3,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": false,
+            "FK": true,
+            "Data type": "DECIMAL",
+            "Not null": false,
+            "Unique": false,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e9611bdd-1a98-485a-a915-48e95d53d44f",
+      "name": "SUPPLIER",
+      "level": "physical",
+      "type": "Not set",
+      "progressStatus": "work-in-progress",
+      "createdAt": "2026-09-14T13:37:54.947Z",
+      "updatedAt": "2026-09-14T13:37:54.947Z",
+      "folderId": null,
+      "metadata": {
+        "Description": "",
+        "Examples": "",
+        "Synonyms": "[]",
+        "Source systems": "[]",
+        "Administrated by": "",
+        "External Term ID": "",
+        "External Glossary ID": "",
+        "ChipsWithDefValue": "[]",
+        "ChipsWithCustonVal": "[]",
+        "Boolean": false,
+        "Users": "[]",
+        "links": []
+      },
+      "linkedEntities": [],
+      "attributes": [
+        {
+          "id": "7d8b588c-b041-11f1-9b39-e22724c8497b",
+          "name": "SUPPLIER_ID",
+          "order": 1,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": true,
+            "FK": false,
+            "Data type": "DECIMAL",
+            "Not null": true,
+            "Unique": true,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dd04b6fd-bf5d-404d-9a7b-fcb7d35d4edc",
+      "name": "TRANSPORT_VEHICLE",
+      "level": "physical",
+      "type": "Not set",
+      "progressStatus": "work-in-progress",
+      "createdAt": "2026-09-14T13:37:54.947Z",
+      "updatedAt": "2026-09-14T13:37:54.947Z",
+      "folderId": null,
+      "metadata": {
+        "Description": "",
+        "Examples": "",
+        "Synonyms": "[]",
+        "Source systems": "[]",
+        "Administrated by": "",
+        "External Term ID": "",
+        "External Glossary ID": "",
+        "ChipsWithDefValue": "[]",
+        "ChipsWithCustonVal": "[]",
+        "Boolean": false,
+        "Users": "[]",
+        "links": []
+      },
+      "linkedEntities": [],
+      "attributes": [
+        {
+          "id": "7d8b4d7e-b041-11f1-9b39-e22724c8497b",
+          "name": "TRANSPORT_VEHICLE_ID",
+          "order": 1,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": true,
+            "FK": false,
+            "Data type": "DECIMAL",
+            "Not null": true,
+            "Unique": true,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3ffc4a1d-242f-4511-8736-fdaebe459b19",
+      "name": "WAREHOUSE",
+      "level": "physical",
+      "type": "Not set",
+      "progressStatus": "work-in-progress",
+      "createdAt": "2026-09-14T13:37:54.947Z",
+      "updatedAt": "2026-09-14T13:37:54.947Z",
+      "folderId": null,
+      "metadata": {
+        "Description": "",
+        "Examples": "",
+        "Synonyms": "[]",
+        "Source systems": "[]",
+        "Administrated by": "",
+        "External Term ID": "",
+        "External Glossary ID": "",
+        "ChipsWithDefValue": "[]",
+        "ChipsWithCustonVal": "[]",
+        "Boolean": false,
+        "Users": "[]",
+        "links": []
+      },
+      "linkedEntities": [],
+      "attributes": [
+        {
+          "id": "7d8b2bfa-b041-11f1-9b39-e22724c8497b",
+          "name": "WAREHOUSE_ID",
+          "order": 1,
+          "createdAt": "2026-09-14T13:37:54.947Z",
+          "metadata": {
+            "PK": true,
+            "FK": false,
+            "Data type": "DECIMAL",
+            "Not null": true,
+            "Unique": true,
+            "Partitioned by": false,
+            "Default": "",
+            "Description": "",
+            "Source system": "",
+            "Source table": "",
+            "Source column": "",
+            "External Term ID": "",
+            "External Glossary ID": "",
+            "ChipWithDefValue": "[]",
+            "ChipWithCustomVal": "[]",
+            "Boolean": false,
+            "Users": "[]"
+          }
+        }
+      ]
+    }
+  ],
+  "extras": [],
+  "relationships": [
+    {
+      "id": "7d8c7956-b041-11f1-9b39-e22724c8497b",
+      "name": null,
+      "description": null,
+      "level": "physical",
+      "folderId": null,
+      "relationshipId": 21449,
+      "sourceEntity": {
+        "id": "b2ea2bc7-4d2b-4b7b-9b36-70a6cc508bb4",
+        "name": "CARRIER",
+        "level": "physical",
+        "folderId": null,
+        "startType": "one",
+        "attributeNames": [
+          "CARRIER_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b4b8a-b041-11f1-9b39-e22724c8497b",
+            "name": "CARRIER_ID"
+          }
+        ]
+      },
+      "targetEntity": {
+        "id": "a048d65a-871d-4b0e-b8e7-4dee02fde4ad",
+        "name": "SHIPMENT",
+        "level": "physical",
+        "folderId": null,
+        "endType": "many",
+        "attributeNames": [
+          "CARRIER_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b4428-b041-11f1-9b39-e22724c8497b",
+            "name": "CARRIER_ID"
+          }
+        ]
+      },
+      "labels": []
+    },
+    {
+      "id": "7d8c903a-b041-11f1-9b39-e22724c8497b",
+      "name": null,
+      "description": null,
+      "level": "physical",
+      "folderId": null,
+      "relationshipId": 21450,
+      "sourceEntity": {
+        "id": "077ab5ea-4168-4d89-b918-665980e6a8a4",
+        "name": "CUSTOMER",
+        "level": "physical",
+        "folderId": null,
+        "startType": "one",
+        "attributeNames": [
+          "CUSTOMER_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b017a-b041-11f1-9b39-e22724c8497b",
+            "name": "CUSTOMER_ID"
+          }
+        ]
+      },
+      "targetEntity": {
+        "id": "87adb3bd-24d8-4684-8c91-16254fb67df9",
+        "name": "DELIVERY",
+        "level": "physical",
+        "folderId": null,
+        "endType": "many",
+        "attributeNames": [
+          "CUSTOMER_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b3e6a-b041-11f1-9b39-e22724c8497b",
+            "name": "CUSTOMER_ID"
+          }
+        ]
+      },
+      "labels": []
+    },
+    {
+      "id": "7d8c9364-b041-11f1-9b39-e22724c8497b",
+      "name": null,
+      "description": null,
+      "level": "physical",
+      "folderId": null,
+      "relationshipId": 21451,
+      "sourceEntity": {
+        "id": "077ab5ea-4168-4d89-b918-665980e6a8a4",
+        "name": "CUSTOMER",
+        "level": "physical",
+        "folderId": null,
+        "startType": "one",
+        "attributeNames": [
+          "CUSTOMER_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b017a-b041-11f1-9b39-e22724c8497b",
+            "name": "CUSTOMER_ID"
+          }
+        ]
+      },
+      "targetEntity": {
+        "id": "45fe629f-1c18-4209-bf7f-f209bf822100",
+        "name": "Order",
+        "level": "physical",
+        "folderId": null,
+        "endType": "many",
+        "attributeNames": [
+          "CUSTOMER_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b2ff6-b041-11f1-9b39-e22724c8497b",
+            "name": "CUSTOMER_ID"
+          }
+        ]
+      },
+      "labels": []
+    },
+    {
+      "id": "7d8c971a-b041-11f1-9b39-e22724c8497b",
+      "name": null,
+      "description": null,
+      "level": "physical",
+      "folderId": null,
+      "relationshipId": 21452,
+      "sourceEntity": {
+        "id": "45fe629f-1c18-4209-bf7f-f209bf822100",
+        "name": "Order",
+        "level": "physical",
+        "folderId": null,
+        "startType": "one",
+        "attributeNames": [
+          "ORDER_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b2df8-b041-11f1-9b39-e22724c8497b",
+            "name": "ORDER_ID"
+          }
+        ]
+      },
+      "targetEntity": {
+        "id": "e5b52c62-6e78-4142-b762-8aaec20f3e26",
+        "name": "INVOICE",
+        "level": "physical",
+        "folderId": null,
+        "endType": "many",
+        "attributeNames": [
+          "ORDER_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b5148-b041-11f1-9b39-e22724c8497b",
+            "name": "ORDER_ID"
+          }
+        ]
+      },
+      "labels": []
+    },
+    {
+      "id": "7d8c98c8-b041-11f1-9b39-e22724c8497b",
+      "name": null,
+      "description": null,
+      "level": "physical",
+      "folderId": null,
+      "relationshipId": 21453,
+      "sourceEntity": {
+        "id": "45fe629f-1c18-4209-bf7f-f209bf822100",
+        "name": "Order",
+        "level": "physical",
+        "folderId": null,
+        "startType": "one",
+        "attributeNames": [
+          "ORDER_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b2df8-b041-11f1-9b39-e22724c8497b",
+            "name": "ORDER_ID"
+          }
+        ]
+      },
+      "targetEntity": {
+        "id": "47b932ff-6ef8-46a8-8489-280074c8803f",
+        "name": "ORDER_PRODUCT",
+        "level": "physical",
+        "folderId": null,
+        "endType": "many",
+        "attributeNames": [
+          "ORDER_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b3442-b041-11f1-9b39-e22724c8497b",
+            "name": "ORDER_ID"
+          }
+        ]
+      },
+      "labels": []
+    },
+    {
+      "id": "7d8c9a8a-b041-11f1-9b39-e22724c8497b",
+      "name": null,
+      "description": null,
+      "level": "physical",
+      "folderId": null,
+      "relationshipId": 21454,
+      "sourceEntity": {
+        "id": "45fe629f-1c18-4209-bf7f-f209bf822100",
+        "name": "Order",
+        "level": "physical",
+        "folderId": null,
+        "startType": "one",
+        "attributeNames": [
+          "ORDER_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b2df8-b041-11f1-9b39-e22724c8497b",
+            "name": "ORDER_ID"
+          }
+        ]
+      },
+      "targetEntity": {
+        "id": "fa658c43-eca9-4fb3-9f49-70e73d76c7d5",
+        "name": "Return",
+        "level": "physical",
+        "folderId": null,
+        "endType": "many",
+        "attributeNames": [
+          "ORDER_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b5db4-b041-11f1-9b39-e22724c8497b",
+            "name": "ORDER_ID"
+          }
+        ]
+      },
+      "labels": []
+    },
+    {
+      "id": "7d8c9be8-b041-11f1-9b39-e22724c8497b",
+      "name": null,
+      "description": null,
+      "level": "physical",
+      "folderId": null,
+      "relationshipId": 21455,
+      "sourceEntity": {
+        "id": "45fe629f-1c18-4209-bf7f-f209bf822100",
+        "name": "Order",
+        "level": "physical",
+        "folderId": null,
+        "startType": "one",
+        "attributeNames": [
+          "ORDER_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b2df8-b041-11f1-9b39-e22724c8497b",
+            "name": "ORDER_ID"
+          }
+        ]
+      },
+      "targetEntity": {
+        "id": "a048d65a-871d-4b0e-b8e7-4dee02fde4ad",
+        "name": "SHIPMENT",
+        "level": "physical",
+        "folderId": null,
+        "endType": "many",
+        "attributeNames": [
+          "ORDER_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b4608-b041-11f1-9b39-e22724c8497b",
+            "name": "ORDER_ID"
+          }
+        ]
+      },
+      "labels": []
+    },
+    {
+      "id": "7d8c9d46-b041-11f1-9b39-e22724c8497b",
+      "name": null,
+      "description": null,
+      "level": "physical",
+      "folderId": null,
+      "relationshipId": 21456,
+      "sourceEntity": {
+        "id": "532a2dcf-b20e-4de7-ac84-a108a9c047a7",
+        "name": "PRODUCT",
+        "level": "physical",
+        "folderId": null,
+        "startType": "one",
+        "attributeNames": [
+          "PRODUCT_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b38f2-b041-11f1-9b39-e22724c8497b",
+            "name": "PRODUCT_ID"
+          }
+        ]
+      },
+      "targetEntity": {
+        "id": "e81a7977-0ea8-4755-bbc7-57ea7b99db75",
+        "name": "INVENTORY",
+        "level": "physical",
+        "folderId": null,
+        "endType": "many",
+        "attributeNames": [
+          "PRODUCT_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b56ca-b041-11f1-9b39-e22724c8497b",
+            "name": "PRODUCT_ID"
+          }
+        ]
+      },
+      "labels": []
+    },
+    {
+      "id": "7d8c9e9a-b041-11f1-9b39-e22724c8497b",
+      "name": null,
+      "description": null,
+      "level": "physical",
+      "folderId": null,
+      "relationshipId": 21457,
+      "sourceEntity": {
+        "id": "532a2dcf-b20e-4de7-ac84-a108a9c047a7",
+        "name": "PRODUCT",
+        "level": "physical",
+        "folderId": null,
+        "startType": "one",
+        "attributeNames": [
+          "PRODUCT_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b38f2-b041-11f1-9b39-e22724c8497b",
+            "name": "PRODUCT_ID"
+          }
+        ]
+      },
+      "targetEntity": {
+        "id": "47b932ff-6ef8-46a8-8489-280074c8803f",
+        "name": "ORDER_PRODUCT",
+        "level": "physical",
+        "folderId": null,
+        "endType": "many",
+        "attributeNames": [
+          "PRODUCT_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b36f4-b041-11f1-9b39-e22724c8497b",
+            "name": "PRODUCT_ID"
+          }
+        ]
+      },
+      "labels": []
+    },
+    {
+      "id": "7d8ca016-b041-11f1-9b39-e22724c8497b",
+      "name": null,
+      "description": null,
+      "level": "physical",
+      "folderId": null,
+      "relationshipId": 21458,
+      "sourceEntity": {
+        "id": "e9611bdd-1a98-485a-a915-48e95d53d44f",
+        "name": "SUPPLIER",
+        "level": "physical",
+        "folderId": null,
+        "startType": "one",
+        "attributeNames": [
+          "SUPPLIER_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b588c-b041-11f1-9b39-e22724c8497b",
+            "name": "SUPPLIER_ID"
+          }
+        ]
+      },
+      "targetEntity": {
+        "id": "532a2dcf-b20e-4de7-ac84-a108a9c047a7",
+        "name": "PRODUCT",
+        "level": "physical",
+        "folderId": null,
+        "endType": "many",
+        "attributeNames": [
+          "SUPPLIER_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b3ab4-b041-11f1-9b39-e22724c8497b",
+            "name": "SUPPLIER_ID"
+          }
+        ]
+      },
+      "labels": []
+    },
+    {
+      "id": "7d8ca17e-b041-11f1-9b39-e22724c8497b",
+      "name": null,
+      "description": null,
+      "level": "physical",
+      "folderId": null,
+      "relationshipId": 21459,
+      "sourceEntity": {
+        "id": "dd04b6fd-bf5d-404d-9a7b-fcb7d35d4edc",
+        "name": "TRANSPORT_VEHICLE",
+        "level": "physical",
+        "folderId": null,
+        "startType": "one",
+        "attributeNames": [
+          "TRANSPORT_VEHICLE_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b4d7e-b041-11f1-9b39-e22724c8497b",
+            "name": "TRANSPORT_VEHICLE_ID"
+          }
+        ]
+      },
+      "targetEntity": {
+        "id": "87adb3bd-24d8-4684-8c91-16254fb67df9",
+        "name": "DELIVERY",
+        "level": "physical",
+        "folderId": null,
+        "endType": "many",
+        "attributeNames": [
+          "TRANSPORT_VEHICLE_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b4040-b041-11f1-9b39-e22724c8497b",
+            "name": "TRANSPORT_VEHICLE_ID"
+          }
+        ]
+      },
+      "labels": []
+    },
+    {
+      "id": "7d8ca2c8-b041-11f1-9b39-e22724c8497b",
+      "name": null,
+      "description": null,
+      "level": "physical",
+      "folderId": null,
+      "relationshipId": 21460,
+      "sourceEntity": {
+        "id": "3ffc4a1d-242f-4511-8736-fdaebe459b19",
+        "name": "WAREHOUSE",
+        "level": "physical",
+        "folderId": null,
+        "startType": "one",
+        "attributeNames": [
+          "WAREHOUSE_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b2bfa-b041-11f1-9b39-e22724c8497b",
+            "name": "WAREHOUSE_ID"
+          }
+        ]
+      },
+      "targetEntity": {
+        "id": "e81a7977-0ea8-4755-bbc7-57ea7b99db75",
+        "name": "INVENTORY",
+        "level": "physical",
+        "folderId": null,
+        "endType": "many",
+        "attributeNames": [
+          "WAREHOUSE_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b54ea-b041-11f1-9b39-e22724c8497b",
+            "name": "WAREHOUSE_ID"
+          }
+        ]
+      },
+      "labels": []
+    },
+    {
+      "id": "7d8ca412-b041-11f1-9b39-e22724c8497b",
+      "name": null,
+      "description": null,
+      "level": "physical",
+      "folderId": null,
+      "relationshipId": 21461,
+      "sourceEntity": {
+        "id": "3ffc4a1d-242f-4511-8736-fdaebe459b19",
+        "name": "WAREHOUSE",
+        "level": "physical",
+        "folderId": null,
+        "startType": "one",
+        "attributeNames": [
+          "WAREHOUSE_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b2bfa-b041-11f1-9b39-e22724c8497b",
+            "name": "WAREHOUSE_ID"
+          }
+        ]
+      },
+      "targetEntity": {
+        "id": "0b0d1c59-de01-4129-ba41-0c83b2648877",
+        "name": "EMPLOYEE",
+        "level": "physical",
+        "folderId": null,
+        "endType": "many",
+        "attributeNames": [
+          "WAREHOUSE_ID"
+        ],
+        "attributes": [
+          {
+            "id": "7d8b295c-b041-11f1-9b39-e22724c8497b",
+            "name": "WAREHOUSE_ID"
+          }
+        ]
+      },
+      "labels": []
+    }
+  ]
+}
